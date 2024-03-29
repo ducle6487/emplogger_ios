@@ -1,0 +1,924 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C24C76B2BB3E09100C9D001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C24C76A2BB3E09100C9D001 /* Assets.xcassets */; };
+		4C24C79F2BB4003B00C9D001 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C24C79E2BB4003B00C9D001 /* GoogleService-Info.plist */; };
+		4C24C7A62BB42CDE00C9D001 /* AppDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7A32BB42CDE00C9D001 /* AppDI.swift */; };
+		4C24C7A72BB42CDE00C9D001 /* EmpLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7A42BB42CDE00C9D001 /* EmpLogger.swift */; };
+		4C24C7A82BB42CDE00C9D001 /* EmpLoggerAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7A52BB42CDE00C9D001 /* EmpLoggerAppDelegate.swift */; };
+		4C24C7C02BB42DF900C9D001 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7BE2BB42DF900C9D001 /* Events.swift */; };
+		4C24C7C12BB42DF900C9D001 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7BF2BB42DF900C9D001 /* Tabs.swift */; };
+		4C24C7C62BB42EAC00C9D001 /* AppRootRoutingContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7C42BB42EAC00C9D001 /* AppRootRoutingContract.swift */; };
+		4C24C7C72BB42EAC00C9D001 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7C52BB42EAC00C9D001 /* AppRootView.swift */; };
+		4C24C7CA2BB42EB500C9D001 /* AppRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7C82BB42EB500C9D001 /* AppRootInteractor.swift */; };
+		4C24C7CB2BB42EB500C9D001 /* AppRootInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7C92BB42EB500C9D001 /* AppRootInteracting.swift */; };
+		4C24C7D02BB42F0A00C9D001 /* EmpLoggerTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7CE2BB42F0A00C9D001 /* EmpLoggerTabItemView.swift */; };
+		4C24C7D12BB42F0A00C9D001 /* EmpLoggerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7CF2BB42F0A00C9D001 /* EmpLoggerTabView.swift */; };
+		4C24C7D42BB42F1000C9D001 /* AppNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7D22BB42F1000C9D001 /* AppNavigationView.swift */; };
+		4C24C7D52BB42F1000C9D001 /* AppNavigationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7D32BB42F1000C9D001 /* AppNavigationStore.swift */; };
+		4C24C7DA2BB42F8D00C9D001 /* DeeplinkInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7D92BB42F8D00C9D001 /* DeeplinkInteractor.swift */; };
+		4C24C7DD2BB42F9600C9D001 /* FirebaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7DB2BB42F9500C9D001 /* FirebaseConfig.swift */; };
+		4C24C7DE2BB42F9600C9D001 /* DeeplinkingConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7DC2BB42F9500C9D001 /* DeeplinkingConfig.swift */; };
+		4C24C7E02BB42FA300C9D001 /* RemoteAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24C7DF2BB42FA300C9D001 /* RemoteAnalytics.swift */; };
+		4C24C7EB2BB518DE00C9D001 /* TestingCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4C24C7EA2BB518DE00C9D001 /* TestingCore */; };
+		4C7F22352BB5247B002FFF7F /* Combustion in Frameworks */ = {isa = PBXBuildFile; productRef = 4C7F22342BB5247B002FFF7F /* Combustion */; };
+		4C7F22372BB5247B002FFF7F /* CombustionUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4C7F22362BB5247B002FFF7F /* CombustionUI */; };
+		4C7F22392BB5247B002FFF7F /* EmpLoggerAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 4C7F22382BB5247B002FFF7F /* EmpLoggerAPI */; };
+		4C7F223B2BB5247B002FFF7F /* EmpLoggerCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4C7F223A2BB5247B002FFF7F /* EmpLoggerCore */; };
+		4C7F223D2BB5247B002FFF7F /* EmpLoggerFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 4C7F223C2BB5247B002FFF7F /* EmpLoggerFoundation */; };
+		4C7F223F2BB5247B002FFF7F /* EmpLoggerInjection in Frameworks */ = {isa = PBXBuildFile; productRef = 4C7F223E2BB5247B002FFF7F /* EmpLoggerInjection */; };
+		4C7F22412BB5247B002FFF7F /* Graphics in Frameworks */ = {isa = PBXBuildFile; productRef = 4C7F22402BB5247B002FFF7F /* Graphics */; };
+		4C7F22432BB52484002FFF7F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4C7F22422BB52484002FFF7F /* FirebaseAnalytics */; };
+		4C7F22452BB52484002FFF7F /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4C7F22442BB52484002FFF7F /* FirebaseAnalyticsSwift */; };
+		4C7F224E2BB54721002FFF7F /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = 4C7F224D2BB54721002FFF7F /* Home */; };
+		4C7F22512BB558D6002FFF7F /* Profile in Frameworks */ = {isa = PBXBuildFile; productRef = 4C7F22502BB558D6002FFF7F /* Profile */; };
+		4C7F22562BB55AE4002FFF7F /* Employee in Frameworks */ = {isa = PBXBuildFile; productRef = 4C7F22552BB55AE4002FFF7F /* Employee */; };
+		4C7F22582BB55AE4002FFF7F /* News in Frameworks */ = {isa = PBXBuildFile; productRef = 4C7F22572BB55AE4002FFF7F /* News */; };
+		4C7F225A2BB55AE4002FFF7F /* OnBoard in Frameworks */ = {isa = PBXBuildFile; productRef = 4C7F22592BB55AE4002FFF7F /* OnBoard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C24C7742BB3E09200C9D001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C24C75B2BB3E09000C9D001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C24C7622BB3E09000C9D001;
+			remoteInfo = EmpLogger;
+		};
+		4C24C77E2BB3E09200C9D001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C24C75B2BB3E09000C9D001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C24C7622BB3E09000C9D001;
+			remoteInfo = EmpLogger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C24C7632BB3E09000C9D001 /* EmpLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmpLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C24C76A2BB3E09100C9D001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C24C7732BB3E09200C9D001 /* EmpLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmpLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C24C77D2BB3E09200C9D001 /* EmpLoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmpLoggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C24C7952BB3FD9C00C9D001 /* EmpLoggerFoundation */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = EmpLoggerFoundation; sourceTree = "<group>"; };
+		4C24C7962BB3FE2000C9D001 /* EmpLoggerInjection */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = EmpLoggerInjection; sourceTree = "<group>"; };
+		4C24C7972BB3FE6D00C9D001 /* EmpLoggerCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = EmpLoggerCore; sourceTree = "<group>"; };
+		4C24C7982BB3FEA000C9D001 /* TestingCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TestingCore; sourceTree = "<group>"; };
+		4C24C7992BB3FEE000C9D001 /* EmpLoggerAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = EmpLoggerAPI; sourceTree = "<group>"; };
+		4C24C79A2BB3FF3500C9D001 /* Graphics */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Graphics; sourceTree = "<group>"; };
+		4C24C79B2BB3FF8200C9D001 /* Combustion */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Combustion; sourceTree = "<group>"; };
+		4C24C79C2BB3FFB900C9D001 /* CombustionUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CombustionUI; sourceTree = "<group>"; };
+		4C24C79E2BB4003B00C9D001 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4C24C7A22BB42CDD00C9D001 /* EmpLogger-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmpLogger-Bridging-Header.h"; sourceTree = "<group>"; };
+		4C24C7A32BB42CDE00C9D001 /* AppDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
+		4C24C7A42BB42CDE00C9D001 /* EmpLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmpLogger.swift; sourceTree = "<group>"; };
+		4C24C7A52BB42CDE00C9D001 /* EmpLoggerAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmpLoggerAppDelegate.swift; sourceTree = "<group>"; };
+		4C24C7AD2BB42D3400C9D001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4C24C7BE2BB42DF900C9D001 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		4C24C7BF2BB42DF900C9D001 /* Tabs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
+		4C24C7C42BB42EAC00C9D001 /* AppRootRoutingContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRootRoutingContract.swift; sourceTree = "<group>"; };
+		4C24C7C52BB42EAC00C9D001 /* AppRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		4C24C7C82BB42EB500C9D001 /* AppRootInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRootInteractor.swift; sourceTree = "<group>"; };
+		4C24C7C92BB42EB500C9D001 /* AppRootInteracting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRootInteracting.swift; sourceTree = "<group>"; };
+		4C24C7CE2BB42F0A00C9D001 /* EmpLoggerTabItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmpLoggerTabItemView.swift; sourceTree = "<group>"; };
+		4C24C7CF2BB42F0A00C9D001 /* EmpLoggerTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmpLoggerTabView.swift; sourceTree = "<group>"; };
+		4C24C7D22BB42F1000C9D001 /* AppNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; };
+		4C24C7D32BB42F1000C9D001 /* AppNavigationStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationStore.swift; sourceTree = "<group>"; };
+		4C24C7D92BB42F8D00C9D001 /* DeeplinkInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeeplinkInteractor.swift; sourceTree = "<group>"; };
+		4C24C7DB2BB42F9500C9D001 /* FirebaseConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseConfig.swift; sourceTree = "<group>"; };
+		4C24C7DC2BB42F9500C9D001 /* DeeplinkingConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeeplinkingConfig.swift; sourceTree = "<group>"; };
+		4C24C7DF2BB42FA300C9D001 /* RemoteAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAnalytics.swift; sourceTree = "<group>"; };
+		4C7F224C2BB531E1002FFF7F /* Home */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Home; sourceTree = "<group>"; };
+		4C7F224F2BB555EA002FFF7F /* Profile */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Profile; sourceTree = "<group>"; };
+		4C7F22522BB5593D002FFF7F /* Employee */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Employee; sourceTree = "<group>"; };
+		4C7F22532BB559A5002FFF7F /* News */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = News; sourceTree = "<group>"; };
+		4C7F22542BB55A00002FFF7F /* OnBoard */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = OnBoard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C24C7602BB3E09000C9D001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C7F22372BB5247B002FFF7F /* CombustionUI in Frameworks */,
+				4C7F22512BB558D6002FFF7F /* Profile in Frameworks */,
+				4C7F223D2BB5247B002FFF7F /* EmpLoggerFoundation in Frameworks */,
+				4C7F22452BB52484002FFF7F /* FirebaseAnalyticsSwift in Frameworks */,
+				4C7F22562BB55AE4002FFF7F /* Employee in Frameworks */,
+				4C7F224E2BB54721002FFF7F /* Home in Frameworks */,
+				4C7F22392BB5247B002FFF7F /* EmpLoggerAPI in Frameworks */,
+				4C7F223B2BB5247B002FFF7F /* EmpLoggerCore in Frameworks */,
+				4C7F22412BB5247B002FFF7F /* Graphics in Frameworks */,
+				4C7F22352BB5247B002FFF7F /* Combustion in Frameworks */,
+				4C7F22432BB52484002FFF7F /* FirebaseAnalytics in Frameworks */,
+				4C7F22582BB55AE4002FFF7F /* News in Frameworks */,
+				4C7F225A2BB55AE4002FFF7F /* OnBoard in Frameworks */,
+				4C7F223F2BB5247B002FFF7F /* EmpLoggerInjection in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C24C7702BB3E09200C9D001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C24C7EB2BB518DE00C9D001 /* TestingCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C24C77A2BB3E09200C9D001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C24C75A2BB3E09000C9D001 = {
+			isa = PBXGroup;
+			children = (
+				4C24C7652BB3E09000C9D001 /* EmpLogger */,
+				4C24C7E32BB5121A00C9D001 /* Feature */,
+				4C24C7932BB3E1D000C9D001 /* Combustion */,
+				4C24C7922BB3E1C400C9D001 /* Common */,
+				4C24C7902BB3E1A700C9D001 /* Core */,
+				4C24C7912BB3E1BA00C9D001 /* CI */,
+				4C24C7642BB3E09000C9D001 /* Products */,
+				4C24C7AE2BB42D4300C9D001 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C24C7642BB3E09000C9D001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C24C7632BB3E09000C9D001 /* EmpLogger.app */,
+				4C24C7732BB3E09200C9D001 /* EmpLoggerTests.xctest */,
+				4C24C77D2BB3E09200C9D001 /* EmpLoggerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C24C7652BB3E09000C9D001 /* EmpLogger */ = {
+			isa = PBXGroup;
+			children = (
+				4C24C7BD2BB42DD200C9D001 /* Constants */,
+				4C24C7AD2BB42D3400C9D001 /* Info.plist */,
+				4C24C7A12BB4007F00C9D001 /* Common */,
+				4C24C7A02BB4006700C9D001 /* App */,
+				4C24C79D2BB3FFE100C9D001 /* Resources */,
+			);
+			path = EmpLogger;
+			sourceTree = "<group>";
+		};
+		4C24C7902BB3E1A700C9D001 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4C24C7992BB3FEE000C9D001 /* EmpLoggerAPI */,
+				4C24C7982BB3FEA000C9D001 /* TestingCore */,
+				4C24C7972BB3FE6D00C9D001 /* EmpLoggerCore */,
+				4C24C7962BB3FE2000C9D001 /* EmpLoggerInjection */,
+				4C24C7952BB3FD9C00C9D001 /* EmpLoggerFoundation */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4C24C7912BB3E1BA00C9D001 /* CI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CI;
+			sourceTree = "<group>";
+		};
+		4C24C7922BB3E1C400C9D001 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4C24C79A2BB3FF3500C9D001 /* Graphics */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4C24C7932BB3E1D000C9D001 /* Combustion */ = {
+			isa = PBXGroup;
+			children = (
+				4C24C79C2BB3FFB900C9D001 /* CombustionUI */,
+				4C24C79B2BB3FF8200C9D001 /* Combustion */,
+			);
+			path = Combustion;
+			sourceTree = "<group>";
+		};
+		4C24C79D2BB3FFE100C9D001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C24C79E2BB4003B00C9D001 /* GoogleService-Info.plist */,
+				4C24C76A2BB3E09100C9D001 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4C24C7A02BB4006700C9D001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4C24C7CC2BB42ED200C9D001 /* Navigation */,
+				4C24C7C22BB42E6E00C9D001 /* Root */,
+				4C24C7A32BB42CDE00C9D001 /* AppDI.swift */,
+				4C24C7A42BB42CDE00C9D001 /* EmpLogger.swift */,
+				4C24C7A52BB42CDE00C9D001 /* EmpLoggerAppDelegate.swift */,
+				4C24C7A22BB42CDD00C9D001 /* EmpLogger-Bridging-Header.h */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4C24C7A12BB4007F00C9D001 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4C24C7D82BB42F6500C9D001 /* Deeplinking */,
+				4C24C7D72BB42F5300C9D001 /* Configuration */,
+				4C24C7D62BB42F4500C9D001 /* Analytics */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4C24C7AE2BB42D4300C9D001 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C24C7BD2BB42DD200C9D001 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4C24C7BE2BB42DF900C9D001 /* Events.swift */,
+				4C24C7BF2BB42DF900C9D001 /* Tabs.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4C24C7C22BB42E6E00C9D001 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				4C24C7C42BB42EAC00C9D001 /* AppRootRoutingContract.swift */,
+				4C24C7C52BB42EAC00C9D001 /* AppRootView.swift */,
+				4C24C7C32BB42E9100C9D001 /* Interactor */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		4C24C7C32BB42E9100C9D001 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4C24C7C92BB42EB500C9D001 /* AppRootInteracting.swift */,
+				4C24C7C82BB42EB500C9D001 /* AppRootInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4C24C7CC2BB42ED200C9D001 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				4C24C7D32BB42F1000C9D001 /* AppNavigationStore.swift */,
+				4C24C7D22BB42F1000C9D001 /* AppNavigationView.swift */,
+				4C24C7CD2BB42EE900C9D001 /* EmpLogger TabView */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		4C24C7CD2BB42EE900C9D001 /* EmpLogger TabView */ = {
+			isa = PBXGroup;
+			children = (
+				4C24C7CE2BB42F0A00C9D001 /* EmpLoggerTabItemView.swift */,
+				4C24C7CF2BB42F0A00C9D001 /* EmpLoggerTabView.swift */,
+			);
+			path = "EmpLogger TabView";
+			sourceTree = "<group>";
+		};
+		4C24C7D62BB42F4500C9D001 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				4C24C7DF2BB42FA300C9D001 /* RemoteAnalytics.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		4C24C7D72BB42F5300C9D001 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				4C24C7DC2BB42F9500C9D001 /* DeeplinkingConfig.swift */,
+				4C24C7DB2BB42F9500C9D001 /* FirebaseConfig.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		4C24C7D82BB42F6500C9D001 /* Deeplinking */ = {
+			isa = PBXGroup;
+			children = (
+				4C24C7D92BB42F8D00C9D001 /* DeeplinkInteractor.swift */,
+			);
+			path = Deeplinking;
+			sourceTree = "<group>";
+		};
+		4C24C7E32BB5121A00C9D001 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				4C7F22542BB55A00002FFF7F /* OnBoard */,
+				4C7F22532BB559A5002FFF7F /* News */,
+				4C7F22522BB5593D002FFF7F /* Employee */,
+				4C7F224F2BB555EA002FFF7F /* Profile */,
+				4C7F224C2BB531E1002FFF7F /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C24C7622BB3E09000C9D001 /* EmpLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C24C7872BB3E09200C9D001 /* Build configuration list for PBXNativeTarget "EmpLogger" */;
+			buildPhases = (
+				4C24C75F2BB3E09000C9D001 /* Sources */,
+				4C24C7602BB3E09000C9D001 /* Frameworks */,
+				4C24C7612BB3E09000C9D001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmpLogger;
+			packageProductDependencies = (
+				4C7F22342BB5247B002FFF7F /* Combustion */,
+				4C7F22362BB5247B002FFF7F /* CombustionUI */,
+				4C7F22382BB5247B002FFF7F /* EmpLoggerAPI */,
+				4C7F223A2BB5247B002FFF7F /* EmpLoggerCore */,
+				4C7F223C2BB5247B002FFF7F /* EmpLoggerFoundation */,
+				4C7F223E2BB5247B002FFF7F /* EmpLoggerInjection */,
+				4C7F22402BB5247B002FFF7F /* Graphics */,
+				4C7F22422BB52484002FFF7F /* FirebaseAnalytics */,
+				4C7F22442BB52484002FFF7F /* FirebaseAnalyticsSwift */,
+				4C7F224D2BB54721002FFF7F /* Home */,
+				4C7F22502BB558D6002FFF7F /* Profile */,
+				4C7F22552BB55AE4002FFF7F /* Employee */,
+				4C7F22572BB55AE4002FFF7F /* News */,
+				4C7F22592BB55AE4002FFF7F /* OnBoard */,
+			);
+			productName = EmpLogger;
+			productReference = 4C24C7632BB3E09000C9D001 /* EmpLogger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C24C7722BB3E09200C9D001 /* EmpLoggerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C24C78A2BB3E09200C9D001 /* Build configuration list for PBXNativeTarget "EmpLoggerTests" */;
+			buildPhases = (
+				4C24C76F2BB3E09200C9D001 /* Sources */,
+				4C24C7702BB3E09200C9D001 /* Frameworks */,
+				4C24C7712BB3E09200C9D001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C24C7752BB3E09200C9D001 /* PBXTargetDependency */,
+			);
+			name = EmpLoggerTests;
+			packageProductDependencies = (
+				4C24C7EA2BB518DE00C9D001 /* TestingCore */,
+			);
+			productName = EmpLoggerTests;
+			productReference = 4C24C7732BB3E09200C9D001 /* EmpLoggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C24C77C2BB3E09200C9D001 /* EmpLoggerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C24C78D2BB3E09200C9D001 /* Build configuration list for PBXNativeTarget "EmpLoggerUITests" */;
+			buildPhases = (
+				4C24C7792BB3E09200C9D001 /* Sources */,
+				4C24C77A2BB3E09200C9D001 /* Frameworks */,
+				4C24C77B2BB3E09200C9D001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C24C77F2BB3E09200C9D001 /* PBXTargetDependency */,
+			);
+			name = EmpLoggerUITests;
+			productName = EmpLoggerUITests;
+			productReference = 4C24C77D2BB3E09200C9D001 /* EmpLoggerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C24C75B2BB3E09000C9D001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					4C24C7622BB3E09000C9D001 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+					4C24C7722BB3E09200C9D001 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 4C24C7622BB3E09000C9D001;
+					};
+					4C24C77C2BB3E09200C9D001 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 4C24C7622BB3E09000C9D001;
+					};
+				};
+			};
+			buildConfigurationList = 4C24C75E2BB3E09000C9D001 /* Build configuration list for PBXProject "EmpLogger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C24C75A2BB3E09000C9D001;
+			packageReferences = (
+				4C24C7942BB3FD1800C9D001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 4C24C7642BB3E09000C9D001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C24C7622BB3E09000C9D001 /* EmpLogger */,
+				4C24C7722BB3E09200C9D001 /* EmpLoggerTests */,
+				4C24C77C2BB3E09200C9D001 /* EmpLoggerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C24C7612BB3E09000C9D001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C24C76B2BB3E09100C9D001 /* Assets.xcassets in Resources */,
+				4C24C79F2BB4003B00C9D001 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C24C7712BB3E09200C9D001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C24C77B2BB3E09200C9D001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C24C75F2BB3E09000C9D001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C24C7D12BB42F0A00C9D001 /* EmpLoggerTabView.swift in Sources */,
+				4C24C7C02BB42DF900C9D001 /* Events.swift in Sources */,
+				4C24C7E02BB42FA300C9D001 /* RemoteAnalytics.swift in Sources */,
+				4C24C7DE2BB42F9600C9D001 /* DeeplinkingConfig.swift in Sources */,
+				4C24C7D42BB42F1000C9D001 /* AppNavigationView.swift in Sources */,
+				4C24C7DD2BB42F9600C9D001 /* FirebaseConfig.swift in Sources */,
+				4C24C7C72BB42EAC00C9D001 /* AppRootView.swift in Sources */,
+				4C24C7CA2BB42EB500C9D001 /* AppRootInteractor.swift in Sources */,
+				4C24C7A72BB42CDE00C9D001 /* EmpLogger.swift in Sources */,
+				4C24C7D02BB42F0A00C9D001 /* EmpLoggerTabItemView.swift in Sources */,
+				4C24C7CB2BB42EB500C9D001 /* AppRootInteracting.swift in Sources */,
+				4C24C7A62BB42CDE00C9D001 /* AppDI.swift in Sources */,
+				4C24C7C12BB42DF900C9D001 /* Tabs.swift in Sources */,
+				4C24C7C62BB42EAC00C9D001 /* AppRootRoutingContract.swift in Sources */,
+				4C24C7A82BB42CDE00C9D001 /* EmpLoggerAppDelegate.swift in Sources */,
+				4C24C7DA2BB42F8D00C9D001 /* DeeplinkInteractor.swift in Sources */,
+				4C24C7D52BB42F1000C9D001 /* AppNavigationStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C24C76F2BB3E09200C9D001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C24C7792BB3E09200C9D001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C24C7752BB3E09200C9D001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C24C7622BB3E09000C9D001 /* EmpLogger */;
+			targetProxy = 4C24C7742BB3E09200C9D001 /* PBXContainerItemProxy */;
+		};
+		4C24C77F2BB3E09200C9D001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C24C7622BB3E09000C9D001 /* EmpLogger */;
+			targetProxy = 4C24C77E2BB3E09200C9D001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4C24C7852BB3E09200C9D001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C24C7862BB3E09200C9D001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C24C7882BB3E09200C9D001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EmpLogger/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.ducle.EmpLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "EmpLogger/App/EmpLogger-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4C24C7892BB3E09200C9D001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EmpLogger/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.ducle.EmpLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "EmpLogger/App/EmpLogger-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4C24C78B2BB3E09200C9D001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.ducle.EmpLoggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmpLogger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EmpLogger";
+			};
+			name = Debug;
+		};
+		4C24C78C2BB3E09200C9D001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.ducle.EmpLoggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmpLogger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EmpLogger";
+			};
+			name = Release;
+		};
+		4C24C78E2BB3E09200C9D001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.ducle.EmpLoggerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmpLogger;
+			};
+			name = Debug;
+		};
+		4C24C78F2BB3E09200C9D001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.ducle.EmpLoggerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmpLogger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C24C75E2BB3E09000C9D001 /* Build configuration list for PBXProject "EmpLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C24C7852BB3E09200C9D001 /* Debug */,
+				4C24C7862BB3E09200C9D001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4C24C7872BB3E09200C9D001 /* Build configuration list for PBXNativeTarget "EmpLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C24C7882BB3E09200C9D001 /* Debug */,
+				4C24C7892BB3E09200C9D001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4C24C78A2BB3E09200C9D001 /* Build configuration list for PBXNativeTarget "EmpLoggerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C24C78B2BB3E09200C9D001 /* Debug */,
+				4C24C78C2BB3E09200C9D001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4C24C78D2BB3E09200C9D001 /* Build configuration list for PBXNativeTarget "EmpLoggerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C24C78E2BB3E09200C9D001 /* Debug */,
+				4C24C78F2BB3E09200C9D001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C24C7942BB3FD1800C9D001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C24C7EA2BB518DE00C9D001 /* TestingCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TestingCore;
+		};
+		4C7F22342BB5247B002FFF7F /* Combustion */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Combustion;
+		};
+		4C7F22362BB5247B002FFF7F /* CombustionUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CombustionUI;
+		};
+		4C7F22382BB5247B002FFF7F /* EmpLoggerAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EmpLoggerAPI;
+		};
+		4C7F223A2BB5247B002FFF7F /* EmpLoggerCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EmpLoggerCore;
+		};
+		4C7F223C2BB5247B002FFF7F /* EmpLoggerFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EmpLoggerFoundation;
+		};
+		4C7F223E2BB5247B002FFF7F /* EmpLoggerInjection */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EmpLoggerInjection;
+		};
+		4C7F22402BB5247B002FFF7F /* Graphics */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Graphics;
+		};
+		4C7F22422BB52484002FFF7F /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C24C7942BB3FD1800C9D001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		4C7F22442BB52484002FFF7F /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C24C7942BB3FD1800C9D001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		4C7F224D2BB54721002FFF7F /* Home */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Home;
+		};
+		4C7F22502BB558D6002FFF7F /* Profile */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Profile;
+		};
+		4C7F22552BB55AE4002FFF7F /* Employee */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Employee;
+		};
+		4C7F22572BB55AE4002FFF7F /* News */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = News;
+		};
+		4C7F22592BB55AE4002FFF7F /* OnBoard */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OnBoard;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4C24C75B2BB3E09000C9D001 /* Project object */;
+}
