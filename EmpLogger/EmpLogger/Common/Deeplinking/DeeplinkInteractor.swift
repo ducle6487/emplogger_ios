@@ -56,7 +56,7 @@ class DeeplinkInteractor: Interactor, DeeplinkInteracting {
         guard !isUrlAppPortal else { return try handleAppPortalDeeplink(url: url) }
 
         // Determine if URL is an internal link
-        guard url.scheme != "ampol" else {
+        guard url.scheme != "emplogger" else {
             return try handleInternalDeeplink(urlComponents: urlComponents)
         }
 

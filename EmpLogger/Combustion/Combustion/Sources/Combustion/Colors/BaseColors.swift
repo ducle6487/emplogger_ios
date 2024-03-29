@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-// MARK: - Kinetic color defaults
+// MARK: - EmpLogger color defaults
 
-struct KineticLightColors: CombustionColors {
+struct EmpLoggerLightColors: CombustionColors {
     var background: Color = ColorTokens.Neutrals.lightGrey
     var surface: Color = ColorTokens.Neutrals.white
     var error: Color = ColorTokens.Reds.emploggerRed
@@ -29,7 +29,7 @@ struct KineticLightColors: CombustionColors {
     var onSecondary: Color = ColorTokens.Neutrals.white
 }
 
-struct KineticDarkColors: CombustionColors {
+struct EmpLoggerDarkColors: CombustionColors {
     var background: Color = ColorTokens.Blacks.emploggerBlack80
     var surface: Color = ColorTokens.Blacks.emploggerBlack
     var error: Color = ColorTokens.Reds.emploggerRed
