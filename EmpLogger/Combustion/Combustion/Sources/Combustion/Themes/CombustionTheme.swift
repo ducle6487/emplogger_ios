@@ -21,8 +21,8 @@ public protocol CombustionTheme: ColorSchemeConformable {
 }
 
 public struct BaseTheme: CombustionTheme {
-    public static var lightColors: CombustionColors = KineticLightColors()
-    public static var darkColors: CombustionColors = KineticDarkColors()
+    public static var lightColors: CombustionColors = EmpLoggerLightColors()
+    public static var darkColors: CombustionColors = EmpLoggerDarkColors()
     public var colors: CombustionColors = lightColors
     public var spacing: CombustionSpacing = BaseSpacing()
     public var typography: CombustionTypography = BaseTypography()

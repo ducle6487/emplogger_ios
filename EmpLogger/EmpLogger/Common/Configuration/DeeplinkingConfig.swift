@@ -13,15 +13,15 @@ public protocol DeeplinkingConfig {
 }
 
 struct DevDeeplinkingConfig: DeeplinkingConfig {
-    var appPortalUrl: String = "https://app-dev.nonprod.ampol.com.au"
+    var appPortalUrl: String = "https://google.com"
 }
 
 struct StgDeeplinkingConfig: DeeplinkingConfig {
-    var appPortalUrl: String = "https://app-stg.nonprod.ampol.com.au"
+    var appPortalUrl: String = "https://google.com"
 }
 
 struct ProdDeeplinkingConfig: DeeplinkingConfig {
-    var appPortalUrl: String = "https://app.ampol.com.au"
+    var appPortalUrl: String = "https://google.com"
 }
 
 extension DependencyMap {
